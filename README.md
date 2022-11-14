@@ -1,4 +1,4 @@
-
+[![Build Status](https://rooshannaeem.visualstudio.com/MyFirstProject/_apis/build/status/RooshanNaeem.pipelines-java-azure?branchName=main)](https://rooshannaeem.visualstudio.com/MyFirstProject/_build/latest?definitionId=1&branchName=main)
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a

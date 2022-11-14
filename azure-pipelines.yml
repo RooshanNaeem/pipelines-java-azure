@@ -22,6 +22,6 @@ steps:
     goals: 'package'
 - task: PublishPipelineArtifact@1
   inputs:
-    targetPath: 'https://rooshannaeem.visualstudio.com/MyFirstProject/_artifacts/feed/rooshannaeem'
+    targetPath: '$(Pipeline.Workspace)'
     artifactType: 'pipeline'
     artifactName: 'drop'

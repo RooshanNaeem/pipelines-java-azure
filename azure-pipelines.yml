@@ -22,7 +22,7 @@ steps:
     pollingTimeoutSec: '300'
       # Put one key=value per line, example:
       # sonar.exclusions=**/*.bin
-      sonar.projectKey=MyFirstProject_MyFirstProject_AYSaLCurl3BMMJQ0gsZz
+      sonar.projectKey= 'MyFirstProject_MyFirstProject_AYSaLCurl3BMMJQ0gsZz'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'

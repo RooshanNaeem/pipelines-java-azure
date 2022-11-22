@@ -36,8 +36,8 @@ steps:
     mavenAuthenticateFeed: false
     effectivePomSkip: false
     sonarQubeRunAnalysis: true
+    isJacocoCoverageReportXML: true
     sqMavenPluginVersionChoice: 'latest'
-    goals: 'package'
 - task: PublishPipelineArtifact@1
   inputs:
     targetPath: '$(Pipeline.Workspace)'

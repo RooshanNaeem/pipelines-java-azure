@@ -16,6 +16,9 @@ steps:
     SonarQube: 'SonarQubeNew'
     scannerMode: 'Other'
     extraProperties: 'sonar.projectKey=MyFirstProject_MyFirstProject_AYSojNwIPxpnXe5B2Nun'
+- powershell: |
+    $params = "$env:SONARQUBE_SCANNER_PARAMS" -replace '"sonar.branch.name":"[\w/,-.]*"\,?'
+    Write-Host "##vso[task.setvariable variable=SONARQUBE_SCANNER_PARAMS]$params"
 - task: JavaToolInstaller@0
   inputs:
     versionSpec: '11'

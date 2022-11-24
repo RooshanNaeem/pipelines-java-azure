@@ -24,6 +24,11 @@ steps:
     versionSpec: '11'
     jdkArchitectureOption: 'x64'
     jdkSourceOption: 'PreInstalled'
+- task: dependency-check-build-task@6
+  inputs:
+    projectName: 'MyProject3rdParty'
+    scanPath: '**/.'
+    format: 'HTML'
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'

@@ -33,8 +33,10 @@ steps:
 - task: dependency-check-build-task@6
   inputs:
     projectName: 'MyProject3rdParty'
-    scanPath: '**/.'
+    scanPath: '$(System.DefaultWorkingDirectory)'
     format: 'HTML'
+    reportsDirectory: '$(System.DefaultWorkingDirectory)/Reports'
+    reportFilename: 'DependendencycheckReport.html'
 - task: Maven@4
   inputs:
     mavenPomFile: 'pom.xml'

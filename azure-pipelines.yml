@@ -15,11 +15,7 @@ steps:
   inputs:
     SonarQube: 'SonarQubeNew'
     scannerMode: 'Other'
-    extraProperties: |
-      # Additional properties that will be passed to the scanner,
-      # Put one key=value per line, example:
-      # sonar.exclusions=**/*.bin
-      sonar.projectKey=MyFirstProject_MyFirstProject_AYSe0A2_yxQfqN-7p9Md
+    extraProperties: 'sonar.projectKey=MyFirstProject_MyFirstProject_AYSojNwIPxpnXe5B2Nun'
 - task: JavaToolInstaller@0
   inputs:
     versionSpec: '11'
@@ -35,7 +31,7 @@ steps:
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
     effectivePomSkip: false
-    #sonarQubeRunAnalysis: true
+    sonarQubeRunAnalysis: true
     isJacocoCoverageReportXML: true
     sqMavenPluginVersionChoice: 'latest'
 - task: PublishPipelineArtifact@1
